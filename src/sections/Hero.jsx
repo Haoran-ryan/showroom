@@ -58,9 +58,7 @@ const Hero = () => {
             <div key={index}>
               <ShoeCard
                 imgUrl={shoe}
-                changeBigShoeImage={(shoe) => {
-                  setBigShoeImg(shoe);
-                }}
+                changeBigShoeImage={setBigShoeImg}
                 bigShoeImg={bigShoeImg}
               />
             </div>
